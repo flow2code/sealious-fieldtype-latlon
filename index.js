@@ -13,6 +13,10 @@ var latlong = new Sealious.FieldType({
 			"longitude": "lon",
 		};
 
+		if(value instanceof Array){
+			value = {lat: value[0], lon: value[1]};
+		}
+
 		for(var i in synonyms){
 			if(value[i]){
 				value[synonyms[i]] = value[i];
@@ -38,6 +42,9 @@ var latlong = new Sealious.FieldType({
 		return Promise.resolve();
 	},
 	encode: function(context, params, value){
+		if(value instanceof Array){
+			value = {lat: value[0], lon: value[1]};
+		}
 		return   { "type": "Point", "coordinates": [value.lon, value.lat].map(parseFloat) };
 	},
 	format: function(context, decoded_value, format){
