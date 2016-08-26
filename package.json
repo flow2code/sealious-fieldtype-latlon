@@ -1,0 +1,22 @@
+{
+  "name": "sealious-fieldtype-latlon",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flow2code/sealious-fieldtype-latlon.git"
+  },
+  "keywords": [
+    "sealious-plugin"
+  ],
+  "author": "flow2code",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flow2code/sealious-fieldtype-latlon/issues"
+  },
+  "homepage": "https://github.com/flow2code/sealious-fieldtype-latlon#readme"
+}
