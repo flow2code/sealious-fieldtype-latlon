@@ -10,9 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/flow2code/sealious-fieldtype-latlon.git"
   },
-  "peerDependencies": {
-    "sealious": "^0.8.0"
-  },
   "keywords": [
     "sealious-plugin"
   ],
