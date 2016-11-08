@@ -58,5 +58,5 @@ var latlong = {
 
 
 module.exports = function(App){
-	return App.createFieldType(latlong);
+	return App.createChip(Sealious.FieldType, latlong);
 };
