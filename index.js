@@ -1,6 +1,6 @@
 var Sealious = require("sealious");
 
-var latlong = new Sealious.FieldType({
+var latlong = {
 	name: "latlong",
 	has_index: function(){
 		return false;
@@ -54,7 +54,9 @@ var latlong = new Sealious.FieldType({
 			default: return decoded_value;
 		}
 	},
-});
+};
 
 
-module.exports = latlong;
+module.exports = function(App){
+	return App.createFieldType(latlong);
+};
