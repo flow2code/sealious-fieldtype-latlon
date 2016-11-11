@@ -47,7 +47,7 @@ var latlong = {
 		}
 		return   { "type": "Point", "coordinates": [value.lon, value.lat].map(parseFloat) };
 	},
-	format: function(context, decoded_value, format){
+	format: function(context, params, decoded_value, format){
 		switch(format){
 			case "geoJSON": return decoded_value;
 			case "array": return decoded_value.coordinates;
